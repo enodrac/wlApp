@@ -1,0 +1,136 @@
+$color1: #0b132b;
+$color2: #1c2541;
+$color3: #3a506b;
+
+.day_data_main_container {
+  display: flex;
+  flex-direction: column;
+  width: calc(45vw - 16px);
+  margin: 16px;
+
+  .food_exercise_container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+
+    .food_container {
+      display: flex;
+      flex-direction: column;
+      margin-right: 16px;
+    }
+
+    .add_item_container {
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 32px;
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-weight: 600;
+
+        .delete {
+          height: 32px;
+          padding: 5px 10px;
+        }
+      }
+
+    }
+
+    .input_add_container {
+      display: flex;
+
+      .input {
+        display: flex;
+        width: 100%;
+
+        &::placeholder {
+          color: $color2
+        }
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+
+
+      .add {
+        display: flex;
+        margin-left: 16px;
+        padding: 5px 10px;
+        height: 32px;
+      }
+
+      &.global {
+        flex-direction: column;
+
+        .add {
+          margin: 0 0 16px 0;
+        }
+
+        
+        .input {
+          width: fit-content;
+        }
+      }
+    }
+
+    .label{
+      margin: 0 auto 8px auto;
+    }
+
+    .exercise_container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+    }
+
+    .input {
+      display: flex;
+      background-color: transparent;
+      outline: none;
+      color: $color3;
+      padding: 5px 10px;
+      height: 32px;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .items_container {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      // padding-right: 10px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color2;
+        border-radius: 4px;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .list_tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -8px 0 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .data_container {
+    margin-top: 32px;
+  }
+
+}
