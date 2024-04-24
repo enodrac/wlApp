@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wlApp/static/css/main.5c59791c.css",
+    "main.js": "/wlApp/static/js/main.85a85bb1.js",
+    "static/js/787.fd86a85d.chunk.js": "/wlApp/static/js/787.fd86a85d.chunk.js",
+    "index.html": "/wlApp/index.html",
+    "main.5c59791c.css.map": "/wlApp/static/css/main.5c59791c.css.map",
+    "main.85a85bb1.js.map": "/wlApp/static/js/main.85a85bb1.js.map",
+    "787.fd86a85d.chunk.js.map": "/wlApp/static/js/787.fd86a85d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c59791c.css",
+    "static/js/main.85a85bb1.js"
+  ]
+}
