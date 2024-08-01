@@ -42,7 +42,6 @@ import arrowDown from './assets/icons/facebook.png'
 import kuepaWhiteLogo from './assets/icons/facebook.png'
 import burgerIcon from './assets/icons/facebook.png'
 import graduatesV2 from './assets/icons/facebook.png'
-import Animator from './components/animator/animator';
 import bachilleratoAcelerado from './assets/icons/facebook.png'
 import tecnicosLaborales from './assets/icons/facebook.png'
 import methodologyM1 from './assets/icons/facebook.png'
@@ -72,6 +71,7 @@ import instagramLogo from './assets/icons/facebook.png'
 import facebookLogo from './assets/icons/facebook.png'
 import tiktokLogo from './assets/icons/facebook.png'
 import linkedInLogo from './assets/icons/facebook.png'
+import Animator from './animator/animator';
 
 export interface IUserData {
   name: string
