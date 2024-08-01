@@ -1,15 +1,42 @@
 {
   "files": {
     "main.css": "/wlApp/static/css/main.d3a814d0.css",
-    "main.js": "/wlApp/static/js/main.1e71bfff.js",
+    "main.js": "/wlApp/static/js/main.429bf81f.js",
     "static/js/453.6ea7acc2.chunk.js": "/wlApp/static/js/453.6ea7acc2.chunk.js",
+    "static/media/alisonAvatar.svg": "/wlApp/static/media/alisonAvatar.0f937d7ae2ecd13df463375cf738f2b3.svg",
+    "static/media/jonathanAvatar.svg": "/wlApp/static/media/jonathanAvatar.f2ab03679f25b54d45086bf8a49291e9.svg",
+    "static/media/niniAvatar.svg": "/wlApp/static/media/niniAvatar.bc7ad2b6dd4be72208544ce981d7a547.svg",
+    "static/media/katrinAvatar.svg": "/wlApp/static/media/katrinAvatar.93ebd80e000840358fd6f49529929495.svg",
+    "static/media/bachilleratoAceleradoV2.png": "/wlApp/static/media/bachilleratoAceleradoV2.acb26dacd07e2dd4ca8f.png",
+    "static/media/samuelAvatar.svg": "/wlApp/static/media/samuelAvatar.c50fb262c7cb5f9afd2d90a6fffd9b74.svg",
+    "static/media/footerLogos.svg": "/wlApp/static/media/footerLogos.5bb20e908064e9e24e1d8c3ad84008b2.svg",
+    "static/media/graduatesV2.png": "/wlApp/static/media/graduatesV2.955cfb2a1878db5c6a9b.png",
+    "static/media/tecnicosLaboralesV2.png": "/wlApp/static/media/tecnicosLaboralesV2.4404a656eff5dbf290f6.png",
+    "static/media/ketKuepaEduTechLogoV2.png": "/wlApp/static/media/ketKuepaEduTechLogoV2.cda32b6fd58a8d6debac.png",
+    "static/media/espirituJovenV2.svg": "/wlApp/static/media/espirituJovenV2.e40b433cc46bcb00cb3231e4e881e350.svg",
+    "static/media/espírituEmprendedorV2.svg": "/wlApp/static/media/espírituEmprendedorV2.9a2030073cc778476929626c1951a986.svg",
+    "static/media/transparenciaV2.svg": "/wlApp/static/media/transparenciaV2.acede65b962d30c6cba2820c864e3d44.svg",
+    "static/media/ejemploV2.svg": "/wlApp/static/media/ejemploV2.b0871578d9207631f4ca9a161c2cbfc4.svg",
+    "static/media/profecionalismoV2.svg": "/wlApp/static/media/profecionalismoV2.bded2d0dc66760711e660bb99deb11c4.svg",
+    "static/media/eficienciaV2.svg": "/wlApp/static/media/eficienciaV2.0d4877c1f475c32e0587375b2e5291f4.svg",
+    "static/media/kuepaWhiteLogo.svg": "/wlApp/static/media/kuepaWhiteLogo.f713658195a6eae881e18ca4742327fd.svg",
+    "static/media/kuepaLogo.svg": "/wlApp/static/media/kuepaLogo.1d82cd071257470f3fff2f97f1b904c7.svg",
+    "static/media/play.svg": "/wlApp/static/media/play.25aaf6b4d33e10f9e9b5f051d1059590.svg",
     "index.html": "/wlApp/index.html",
+    "static/media/tiktokLogo.svg": "/wlApp/static/media/tiktokLogo.2da0c4740582c0b6ab07dfd26e846704.svg",
+    "static/media/instagramLogo.svg": "/wlApp/static/media/instagramLogo.706041f9c8a5c65d32e23bb5023ae1c6.svg",
+    "static/media/linkedInLogo.svg": "/wlApp/static/media/linkedInLogo.6aedb6a57cec004859f06ceb59853007.svg",
+    "static/media/close.svg": "/wlApp/static/media/close.82607ab9d43dc4cc6db732b28d489271.svg",
+    "static/media/cuotes.svg": "/wlApp/static/media/cuotes.c278d9fc9a09a51b8663cd014c3fe1fe.svg",
+    "static/media/burgerIcon.svg": "/wlApp/static/media/burgerIcon.21a949c594e2fdd046c55ab424e5aa48.svg",
+    "static/media/facebookLogo.svg": "/wlApp/static/media/facebookLogo.478bf003b86bb9483333fa3c47f78e37.svg",
+    "static/media/arrowDown.svg": "/wlApp/static/media/arrowDown.595de21e2a43c2c5beb74cf1792c273d.svg",
     "main.d3a814d0.css.map": "/wlApp/static/css/main.d3a814d0.css.map",
-    "main.1e71bfff.js.map": "/wlApp/static/js/main.1e71bfff.js.map",
+    "main.429bf81f.js.map": "/wlApp/static/js/main.429bf81f.js.map",
     "453.6ea7acc2.chunk.js.map": "/wlApp/static/js/453.6ea7acc2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3a814d0.css",
-    "static/js/main.1e71bfff.js"
+    "static/js/main.429bf81f.js"
   ]
 }
