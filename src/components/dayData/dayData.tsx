@@ -14,7 +14,7 @@ const DayData = ({ wlAppData, setWlAppData }: { wlAppData: IWlAppData, setWlAppD
   const handleSelectedFood = (add?: boolean) => {
     let auxWlAppData = JSON.parse(JSON.stringify(wlAppData || {}))
     let auxTodayData = JSON.parse(JSON.stringify(todayData || {}))
-    let foodItem = { [auxWlAppData?.appData?.selectedFood?.name || auxWlAppData?.appData?.foodSearch]: { ...(auxWlAppData?.appData?.selectedFood?.name ? auxWlAppData?.appData?.selectedFood : { name: auxWlAppData?.appData?.selectedFood, ...auxWlAppData?.appData?.selectedFood }) } }
+    let foodItem: any = { [auxWlAppData?.appData?.selectedFood?.name || auxWlAppData?.appData?.foodSearch]: { ...(auxWlAppData?.appData?.selectedFood?.name ? auxWlAppData?.appData?.selectedFood : { name: auxWlAppData?.appData?.selectedFood, ...auxWlAppData?.appData?.selectedFood }) } }
     if (add && auxTodayData) {
       auxTodayData = {
         ...(auxTodayData ? auxTodayData : {}),
@@ -26,9 +26,7 @@ const DayData = ({ wlAppData, setWlAppData }: { wlAppData: IWlAppData, setWlAppD
     } else {
       delete todayData?.foodList[auxWlAppData?.appData?.selectedFood?.name]
     }
-    delete auxWlAppData?.appData?.foodSearch
-    delete auxWlAppData?.appData?.selectedFood
-    if (!auxWlAppData?.foodData || !auxWlAppData?.foodData[auxWlAppData?.appData?.selectedFood?.name || auxWlAppData?.appData?.foodSearch]) {
+    if (!auxWlAppData?.foodData || !auxWlAppData?.foodData[auxWlAppData?.appData?.selectedFood?.name] || (auxWlAppData?.appData?.foodSearch && auxWlAppData?.foodData[auxWlAppData?.appData?.selectedFood?.name]) || foodItem[auxWlAppData?.appData?.selectedFood?.name]?.grams === '100') {
       auxWlAppData = {
         ...(auxWlAppData ? auxWlAppData : {}),
         foodData: {
@@ -37,6 +35,8 @@ const DayData = ({ wlAppData, setWlAppData }: { wlAppData: IWlAppData, setWlAppD
         }
       }
     }
+    delete auxWlAppData?.appData?.foodSearch
+    delete auxWlAppData?.appData?.selectedFood
     auxWlAppData.calendarData[new Date()?.toLocaleDateString().replace(/\/\d{1,2}\//, '/')][new Date().getDate()] = auxTodayData
     setWlAppData(auxWlAppData)
   }
@@ -112,16 +112,16 @@ const DayData = ({ wlAppData, setWlAppData }: { wlAppData: IWlAppData, setWlAppD
     return (
       <div className={'data_container border'}>
         <div>
-          Calorias diarias: <b>{dailyCalories}</b>
+          Calorias diarias: <b>{Math.ceil(dailyCalories)}</b>
         </div>
         <div>
-          calorias ingeridas: <b>{foodCalories}</b>
+          calorias ingeridas: <b>{Math.ceil(foodCalories)}</b>
         </div>
         <div>
-          Calorias ejercitadas: <b>{exerciseCalories}</b>
+          Calorias ejercitadas: <b>{Math.ceil(exerciseCalories)}</b>
         </div>
         <div>
-          deficit calorico: <b>{parseInt(dailyCalories) + parseInt(foodCalories) - parseInt(exerciseCalories)}</b>
+          deficit calorico: <b>{Math.ceil(parseInt(dailyCalories) - parseInt(foodCalories) - parseInt(exerciseCalories))}</b>
         </div>
       </div>
     )

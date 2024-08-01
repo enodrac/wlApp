@@ -1,0 +1,250 @@
+.animator_main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-height: 100vh;
+  height: 100vh;
+
+  .animator_canvas {
+    position: relative;
+    overflow: hidden;
+    transform-origin: top;
+    background-color: #101112;
+
+    .element_pointer {
+      position: absolute;
+      border: 2px solid white;
+      pointer-events: none;
+    }
+
+    [class*=frame_element] {
+      position: absolute;
+      cursor: pointer;
+
+    }
+  }
+
+  .toolbar_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4px;
+    background-color: #292929;
+
+    .create_next_frame {
+      padding: 0 8px;
+      cursor: pointer;
+      user-select: none;
+
+      .text_container {
+        margin-top: -4px;
+        color: white;
+        font-size: 30px;
+      }
+    }
+
+    .custom_style {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      user-select: none;
+
+      .text_container {
+        padding: 8px;
+      }
+
+      &.active {
+        background-color: var(--primary);
+        color: white;
+      }
+    }
+
+    .edit_container {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 83px;
+      right: 2px;
+      border-radius: 8px;
+      padding: 10px;
+      width: fit-content;
+      height: fit-content;
+      background-color: #292929;
+      color: white;
+      z-index: 999;
+      border: 1px solid white;
+      max-height: 90vh;
+      overflow-y: auto;
+
+      svg {
+        color: white;
+      }
+
+      .edit_element {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 8px;
+
+        input {
+          margin-left: 4px;
+          width: 100%;
+          border: none;
+          outline: none;
+          background-color: #292929;
+          color: white;
+          border: 1px solid #CFD1D6;
+          padding: 0 8px;
+          border-radius: 4px;
+        }
+      }
+
+      .close_button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .frames_container {
+      display: flex;
+      width: 100%;
+
+      .custom_style {
+        display: flex;
+        justify-content: center;
+        color: white;
+        border-right: 1px solid white;
+        min-width: 120px;
+
+        .text_container {
+          cursor: pointer;
+        }
+
+        svg {
+          color: white;
+        }
+
+        &:first-child {
+          border-left: none;
+        }
+      }
+
+      .frames_scroll {
+        display: flex;
+        overflow-x: auto;
+      }
+
+      .close_button {
+        margin: 8px;
+        border-radius: 4px;
+        border: 1px solid white;
+        cursor: pointer;
+        position: relative;
+
+        .cover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .active {
+        background-color: var(--primary);
+        color: white;
+      }
+
+      .canvas_option {
+        .canvas_actions_container {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 40px;
+          border-radius: 8px;
+          margin-top: 2px;
+          padding: 0 8px 8px 8px;
+          left: 0;
+          z-index: 999;
+          background-color: #292929;
+
+          .custom_style {
+            border-bottom: 1px solid white;
+            border-right: none;
+
+            .text_container {
+              width: 100%;
+              transition: all 1s ease-out;
+              text-align: center;
+            }
+
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+
+    .elements_container {
+      display: flex;
+
+      svg {
+        color: white;
+      }
+
+      .elements_scroll {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-gutter: auto;
+      }
+
+      .text_container {
+        cursor: pointer;
+      }
+
+      .custom_style {
+        border-right: 1px solid white;
+        color: white;
+      }
+
+      .close_button {
+        margin: 8px;
+        border-radius: 4px;
+        border: 1px solid white;
+        cursor: pointer;
+        position: relative;
+
+        .cover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .create_next_frame {
+        margin-top: -2px;
+      }
+
+      .active {
+        background-color: var(--primary);
+        color: white;
+      }
+    }
+  }
+
+  .custom_horizontal_scroll {
+    &::-webkit-scrollbar {
+      height: 6px !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #656A71;
+    }
+  }
+}
