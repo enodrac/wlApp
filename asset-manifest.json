@@ -1,8 +1,14 @@
 {
   "files": {
     "main.css": "/wlApp/static/css/main.d3a814d0.css",
-    "main.js": "/wlApp/static/js/main.429bf81f.js",
+    "main.js": "/wlApp/static/js/main.2860d6e1.js",
     "static/js/453.6ea7acc2.chunk.js": "/wlApp/static/js/453.6ea7acc2.chunk.js",
+    "static/media/calle85.svg": "/wlApp/static/media/calle85.1deca51361404dd92db6627729c66498.svg",
+    "static/media/methodologyM4.svg": "/wlApp/static/media/methodologyM4.3eeffad73a023d715fe27c64ac83b477.svg",
+    "static/media/calle72.svg": "/wlApp/static/media/calle72.cc3d26c79f569eae9ad700a4fd7ab02a.svg",
+    "static/media/methodologyM1.svg": "/wlApp/static/media/methodologyM1.02166e7b14a224d50bcee7b507ba78b9.svg",
+    "static/media/methodologyM2.svg": "/wlApp/static/media/methodologyM2.e84b3b30506285eba8547505e138b3ef.svg",
+    "static/media/methodologyM3.svg": "/wlApp/static/media/methodologyM3.bd6d3e064aecf985b1cc72a05f58cc37.svg",
     "static/media/alisonAvatar.svg": "/wlApp/static/media/alisonAvatar.0f937d7ae2ecd13df463375cf738f2b3.svg",
     "static/media/jonathanAvatar.svg": "/wlApp/static/media/jonathanAvatar.f2ab03679f25b54d45086bf8a49291e9.svg",
     "static/media/niniAvatar.svg": "/wlApp/static/media/niniAvatar.bc7ad2b6dd4be72208544ce981d7a547.svg",
@@ -32,11 +38,11 @@
     "static/media/facebookLogo.svg": "/wlApp/static/media/facebookLogo.478bf003b86bb9483333fa3c47f78e37.svg",
     "static/media/arrowDown.svg": "/wlApp/static/media/arrowDown.595de21e2a43c2c5beb74cf1792c273d.svg",
     "main.d3a814d0.css.map": "/wlApp/static/css/main.d3a814d0.css.map",
-    "main.429bf81f.js.map": "/wlApp/static/js/main.429bf81f.js.map",
+    "main.2860d6e1.js.map": "/wlApp/static/js/main.2860d6e1.js.map",
     "453.6ea7acc2.chunk.js.map": "/wlApp/static/js/453.6ea7acc2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3a814d0.css",
-    "static/js/main.429bf81f.js"
+    "static/js/main.2860d6e1.js"
   ]
 }
